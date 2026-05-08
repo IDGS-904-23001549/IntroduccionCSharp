@@ -120,12 +120,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DistanciaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MultiplicacionController.cs" />
     <Compile Include="Controllers\PruebaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Distancia.cs" />
+    <Compile Include="Models\Multiplicacion.cs" />
+    <Compile Include="Models\OperasBas.cs" />
+    <Compile Include="Models\Pelicula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\PeliculasService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -180,10 +187,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Prueba\Index.cshtml" />
     <Content Include="Views\Prueba\Suma.cshtml" />
+    <Content Include="Views\Prueba\MuestraPeliculas.cshtml" />
+    <Content Include="Views\Prueba\Calculos.cshtml" />
+    <Content Include="Views\Distancia\Index.cshtml" />
+    <Content Include="Views\Multiplicacion\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

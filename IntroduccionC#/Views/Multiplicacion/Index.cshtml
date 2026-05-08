@@ -1,0 +1,28 @@
+﻿@model IntroduccionC_.Models.Multiplicacion
+@{
+    ViewBag.Title = "Multiplicación por sumas";
+}
+
+<h2>Multiplicar A x B</h2>
+
+<div class="container">
+    <form action="/Multiplicacion/Index" method="post">
+        <label>Valor de A: </label>
+        <input type="text" name="A" value="" />
+        <br /><br />
+
+        <label>Valor de B: </label>
+        <input type="text" name="B" value="" />
+        <br /><br />
+
+        <input type="submit" value="Calcular" class="btn btn-primary" />
+    </form>
+
+    <hr />
+
+    <h3>Resultado:</h3>
+    @if (!string.IsNullOrEmpty(Model.OperacionCompleta))
+    {
+        <h1>@Model.OperacionCompleta</h1>
+    }
+</div>

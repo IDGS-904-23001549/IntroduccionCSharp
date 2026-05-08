@@ -1,0 +1,32 @@
+﻿@model IEnumerable<IntroduccionC_.Models.Pelicula>
+
+@{
+    ViewBag.Title = "MuestraPeliculas";
+}
+
+<h2>MuestraPeliculas</h2>
+<div class="container">
+    <div class="row">
+        <table>
+            <thead>
+            <th>Titulo</th>
+            <th>Duracion</th>
+            <th>Pais</th>
+            <th>Publicacion</th>
+            </thead>
+            <tbody>
+                @foreach (var pelicula in Model)
+                {
+                    <tr>
+                        <td>@pelicula.Titulo</td>
+                        <td>@pelicula.Duracion</td>
+                        <td>@pelicula.Pais</td>
+                        <td>@pelicula.Publicacion.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

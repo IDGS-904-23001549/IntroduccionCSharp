@@ -1,0 +1,28 @@
+﻿@model IntroduccionC_.Models.OperasBas
+
+@{
+    ViewBag.Title = "Calculos";
+}
+
+<h2>Calculos</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="Num1">Numero 1: </label>
+                <input type="text" name="Num1" value="" />
+                <br />
+                <label for="Num2">Numero 2: </label>
+                <input type="text" name="Num2" value="" />
+                <br />
+                <input type="submit" value="enviar" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <br />
+            <h1>La suma es: @Html.DisplayFor(model=>model.Res)</h1>
+        </div>
+    </div>
+</div>
+
